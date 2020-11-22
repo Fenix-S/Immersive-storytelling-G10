@@ -5,24 +5,38 @@ using UnityEngine;
 public class staireFall : MonoBehaviour
 {
     private GameObject[] stairs;
+    private Rigidbody[] r;
+    private bool hasFallen = false;
 
     void Start()
     {
-        Rigidbody[] r = transform.GetComponentsInChildren<Rigidbody>();
+        r = transform.GetComponentsInChildren<Rigidbody>();
 
         for (int i = 0; i < r.Length; i++)
         {
             r[i].useGravity = false;
-            StartCoroutine(fall(i, r[i]));
-            StartCoroutine(destroyStair(i, transform.GetChild(i).gameObject));
+            r[i].isKinematic = true;
         }
+    }
 
+    void OnTriggerEnter(Collider e)
+    {
+        if(!hasFallen && e.tag == "Player")
+        {
+            for (int i = 0; i < r.Length; i++)
+            {
+                StartCoroutine(fall(i, r[i]));
+                StartCoroutine(destroyStair(i, transform.GetChild(i).gameObject));
+            }
+            hasFallen = true;
+        }
     }
 
     IEnumerator fall(int index, Rigidbody rb)
     {
         yield return new WaitForSeconds(index * 1f);
         rb.useGravity = true;
+        rb.isKinematic = false;
         rb.velocity = Vector3.down * 2f;
     }
 
