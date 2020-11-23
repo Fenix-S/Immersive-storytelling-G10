@@ -1401,10 +1401,11 @@ GameObject:
   - component: {fileID: 773718665}
   - component: {fileID: 773718664}
   - component: {fileID: 773718663}
-  - component: {fileID: 773718662}
   - component: {fileID: 773718661}
+  - component: {fileID: 773718662}
   - component: {fileID: 773718666}
   - component: {fileID: 773718667}
+  - component: {fileID: 773718668}
   m_Layer: 0
   m_Name: XR Rig
   m_TagString: Player
@@ -1443,10 +1444,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 773718660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ec27ae3abad76f468b97c2043a20fe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_System: {fileID: 773718663}
+  speed: 1
+  input: 5
 --- !u!114 &773718663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1523,6 +1525,24 @@ CapsuleCollider:
   m_Radius: 2
   m_Height: 7.44
   m_Direction: 1
+  m_Center: {x: 0, y: 2.12, z: 0}
+--- !u!143 &773718668
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773718660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 7.44
+  m_Radius: 2
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 2.12, z: 0}
 --- !u!1 &864759916
 GameObject:
