@@ -5,20 +5,22 @@ using UnityEngine.SceneManagement;
 public class loadManager : MonoBehaviour
 {
     private bool hasFallen = false;
+    public enum scenes {Bedroom=0,Stairs=1,Universe=2,ColorRoom=3,UnderWater=4}
+    public scenes GoToScenes;
 
     void OnTriggerEnter(Collider e)
     {   
         if (!hasFallen && e.tag.Equals("Player"))
         {
-            StartCoroutine(LoadUniverseScene());
+            StartCoroutine(LoadScene());
             hasFallen = true;
         }
     }
 
-    IEnumerator LoadUniverseScene()
+    IEnumerator LoadScene()
     {
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene((int)GoToScenes);
     }
 
 }
