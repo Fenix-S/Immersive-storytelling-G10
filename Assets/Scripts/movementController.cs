@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -27,13 +28,19 @@ public class movementController : MonoBehaviour
         device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
     }
 
+    public void Move(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    {
+       // inputAxis = context.ReadValue<Vector2>();
+    }
+
     void FixedUpdate()
     {
         Quaternion headYaw = Quaternion.Euler(0, rig.cameraGameObject.transform.eulerAngles.y, 0);
         Vector3 direction = headYaw * new Vector3(inputAxis.x, 0, inputAxis.y);
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
-            character.SimpleMove(direction * Time.fixedDeltaTime * speed);
+            var vector = direction * speed;
+            character.SimpleMove(vector);
         }
         else
         {
