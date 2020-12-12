@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -30,7 +31,13 @@ public class movementController : MonoBehaviour
     {
         Quaternion headYaw = Quaternion.Euler(0, rig.cameraGameObject.transform.eulerAngles.y, 0);
         Vector3 direction = headYaw * new Vector3(inputAxis.x, 0, inputAxis.y);
-
-        character.Move(direction * Time.fixedDeltaTime * speed);
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            character.SimpleMove(direction * Time.fixedDeltaTime * speed);
+        }
+        else
+        {
+            character.Move(direction * Time.fixedDeltaTime * speed);
+        }
     }
 }
