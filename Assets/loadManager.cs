@@ -7,8 +7,8 @@ public class loadManager : MonoBehaviour
     private bool hasFallen = false;
 
     void OnTriggerEnter(Collider e)
-    {
-        if (!hasFallen && e.tag == "Player")
+    {   
+        if (!hasFallen && e.tag.Equals("Player"))
         {
             StartCoroutine(LoadUniverseScene());
             hasFallen = true;
