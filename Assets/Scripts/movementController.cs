@@ -22,18 +22,25 @@ public class movementController : MonoBehaviour
         character = GetComponent<CharacterController>();
         body = GetComponent<Rigidbody>();
         rig = GetComponent<XRRig>();
+
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            var r = transform.rotation;
+            r.y = 0;
+            transform.rotation = r;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        InputDevice device = InputDevices.GetDeviceAtXRNode(input);
-        device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
+        //InputDevice device = InputDevices.GetDeviceAtXRNode(input);
+        //device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
     }
 
     public void Move(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
-        //inputAxis = context.ReadValue<Vector2>();
+        inputAxis = context.ReadValue<Vector2>();
     }
 
     void FixedUpdate()
@@ -50,7 +57,6 @@ public class movementController : MonoBehaviour
         else
         {
             var temp = direction * Time.fixedDeltaTime * speed;
-            print(direction);
             character.Move(temp);
         }
         body.angularVelocity = Vector3.zero;

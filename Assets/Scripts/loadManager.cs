@@ -17,6 +17,15 @@ public class loadManager : MonoBehaviour
         }
     }
 
+    public void LoadSceneOnClick()
+    {
+        if (!hasFallen)
+        {
+            StartCoroutine(LoadScene());
+            hasFallen = true;
+        }
+    }
+
     IEnumerator LoadScene()
     {
         yield return new WaitForSeconds(2f);
