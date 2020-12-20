@@ -4,7 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class loadManager : MonoBehaviour
 {
+
+    public Animator animator;
     private bool hasFallen = false;
+    public bool isLoading { get; private set; }
     public enum scenes {Bedroom=0,Stairs=1,Universe=2,ColorRoom=3,UnderWater=4}
     public scenes GoToScenes;
 
@@ -12,6 +15,9 @@ public class loadManager : MonoBehaviour
     {   
         if (!hasFallen && e.tag.Equals("Player"))
         {
+            if(animator != null)
+                animator.SetBool("blink", true);
+            isLoading = true;
             StartCoroutine(LoadScene());
             hasFallen = true;
         }
@@ -21,6 +27,9 @@ public class loadManager : MonoBehaviour
     {
         if (!hasFallen)
         {
+            if (animator != null)
+                animator.SetBool("blink", true);
+            isLoading = true;
             StartCoroutine(LoadScene());
             hasFallen = true;
         }
@@ -28,7 +37,7 @@ public class loadManager : MonoBehaviour
 
     IEnumerator LoadScene()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(4f);
         SceneManager.LoadScene((int)GoToScenes);
     }
 
