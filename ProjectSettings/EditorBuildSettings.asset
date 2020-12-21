@@ -14,7 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UniverseScene.unity
     guid: ced61d160fe5468489acaeeb5f511539
+  - enabled: 1
+    path: Assets/Scenes/ColorScene.unity
+    guid: d5c5dcd92626e0147afc2402fb2bee47
+  - enabled: 1
+    path: Assets/Scenes/StrandEnZee.unity
+    guid: b0190895330a19d47a0fe9ac6cd8b452
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c4385893bf4cbc047939e2e1426c2b3d, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 27d54833ea0ff7e4ea118d8c0cf63787, type: 2}
-    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: b3d34035e0d7eaf468e69a13ac122dcd, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 5351f42e13fffb9499696fb3c1ea3541, type: 2}
