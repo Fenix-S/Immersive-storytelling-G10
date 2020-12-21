@@ -15,11 +15,7 @@ public class loadManager : MonoBehaviour
     {   
         if (!hasFallen && e.tag.Equals("Player"))
         {
-            if(animator != null)
-                animator.SetBool("blink", true);
-            isLoading = true;
-            StartCoroutine(LoadScene());
-            hasFallen = true;
+            doPreLoad();
         }
     }
 
@@ -27,11 +23,7 @@ public class loadManager : MonoBehaviour
     {
         if (!hasFallen)
         {
-            if (animator != null)
-                animator.SetBool("blink", true);
-            isLoading = true;
-            StartCoroutine(LoadScene());
-            hasFallen = true;
+            doPreLoad();
         }
     }
 
@@ -39,6 +31,14 @@ public class loadManager : MonoBehaviour
     {
         yield return new WaitForSeconds(4f);
         SceneManager.LoadScene((int)GoToScenes);
+    }
+
+    private void doPreLoad() {
+        if (animator != null)
+            animator.SetBool("blink", true);
+        isLoading = true;
+        StartCoroutine(LoadScene());
+        hasFallen = true;
     }
 
 }
