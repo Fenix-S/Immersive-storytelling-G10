@@ -733,6 +733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   input: 5
+  loadManager: {fileID: 0}
 --- !u!114 &555684975
 MonoBehaviour:
   m_ObjectHideFlags: 0
