@@ -664,7 +664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.79
+      value: 15.474
       objectReference: {fileID: 0}
     - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
       propertyPath: m_LocalPosition.z
@@ -717,6 +717,14 @@ PrefabInstance:
     - target: {fileID: 4642337937837574568, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
       propertyPath: m_Text
       value: Flow the stream of colors, to reache the dream door!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337938220996818, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.312455
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337938220996818, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.719
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
@@ -1430,7 +1438,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!1 &1674361403
 GameObject:
