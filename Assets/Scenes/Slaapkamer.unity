@@ -4614,7 +4614,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'Click on the bed when you want to go to sleep!
 
-        So the  journy
+        So the  journey
         can begin for you.'
       objectReference: {fileID: 0}
     - target: {fileID: 4642337938220996818, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
