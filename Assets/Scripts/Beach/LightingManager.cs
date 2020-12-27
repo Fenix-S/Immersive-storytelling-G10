@@ -30,6 +30,7 @@ public class LightingManager : MonoBehaviour
 
         if (TimeOfDay == 475)
         {
+            PlayerPrefs.SetInt("enableDog", 1);
             SceneManager.LoadScene("Slaapkamer");
         }
     }
