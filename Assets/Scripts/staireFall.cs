@@ -45,7 +45,7 @@ public class staireFall : MonoBehaviour
 
     IEnumerator destroyStair(int i, GameObject obj)
     {
-        yield return new WaitForSeconds((i + 1) * 8f);
+        yield return new WaitForSeconds((i + 1) * 1f);
         Destroy(obj);
     }
     
