@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [ExecuteAlways]
 public class LightingManager : MonoBehaviour
@@ -7,7 +8,7 @@ public class LightingManager : MonoBehaviour
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private LightingPreset Preset;
     //Variables
-    [SerializeField, Range(0, 24000)] private float TimeOfDay;
+    [SerializeField, Range(0, 720)] private float TimeOfDay;
 
 
     private void Update()
@@ -19,12 +20,17 @@ public class LightingManager : MonoBehaviour
         {
             //(Replace with a reference to the game time)
             TimeOfDay += Time.deltaTime;
-            TimeOfDay %= 24000; //Modulus to ensure always between 0-24
-            UpdateLighting(TimeOfDay / 24000f);
+            TimeOfDay %= 720; //Modulus to ensure always between 0-24
+            UpdateLighting(TimeOfDay / 720f);
         }
         else
         {
-            UpdateLighting(TimeOfDay / 24000f);
+            UpdateLighting(TimeOfDay / 720f);
+        }
+
+        if (TimeOfDay == 475)
+        {
+            SceneManager.LoadScene("Slaapkamer");
         }
     }
 
