@@ -516,7 +516,7 @@ Transform:
   - {fileID: 1765183079}
   - {fileID: 1236077901}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!28 &32562446
 Texture2D:
@@ -881,7 +881,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!28 &79071685
 Texture2D:
@@ -3151,7 +3151,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!28 &442012633
 Texture2D:
@@ -4539,6 +4539,94 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!1001 &619645386
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4642337937372550739, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_Name
+      value: sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.99993795
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.01114172
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -181.277
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.174045
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1411523
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937372550740, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.09682164
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937837574567, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337937837574568, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_Text
+      value: 'Click on the bed when you want to go to sleep!
+
+        So the  journy
+        can begin for you.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337938220996818, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642337938220996818, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6262519d831d31943a4b2508c6c91115, type: 3}
 --- !u!28 &622212581
 Texture2D:
   m_ObjectHideFlags: 0
@@ -8779,7 +8867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4112414398726650, guid: 466b178cd356e914db5d739249226df9, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4112414398726650, guid: 466b178cd356e914db5d739249226df9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9163,7 +9251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4236317170969072, guid: db9fb8bf112e6b0458147765e27fc54a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4236317170969072, guid: db9fb8bf112e6b0458147765e27fc54a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9811,7 +9899,7 @@ Transform:
   - {fileID: 1905749420}
   - {fileID: 1792302941}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!28 &1175210999
 Texture2D:
@@ -12308,7 +12396,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!28 &1435563100
 Texture2D:
@@ -13954,7 +14042,7 @@ Transform:
   m_Children:
   - {fileID: 2094813614}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1564161975
 MonoBehaviour:
@@ -18206,7 +18294,7 @@ Transform:
   - {fileID: 992832065}
   - {fileID: 1043744950}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!28 &1982600789
 Texture2D:
