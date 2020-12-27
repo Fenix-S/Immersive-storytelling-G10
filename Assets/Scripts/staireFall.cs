@@ -27,16 +27,17 @@ public class staireFall : MonoBehaviour
         {
             for (int i = 0; i < r.Length; i++)
             {
-                StartCoroutine(fall(i, r[i], audioSources[i]));
-                StartCoroutine(destroyStair(i, transform.GetChild(i).gameObject));
+                StartCoroutine(fall(i, r[i], audioSources[i], transform.GetChild(i+1).gameObject.GetComponent<BoxCollider>()));
+                StartCoroutine(destroyStair(i, transform.GetChild(i+1).gameObject));
             }
             hasFallen = true;
         }
     }
 
-    IEnumerator fall(int index, Rigidbody rb, AudioSource audioSource)
+    IEnumerator fall(int index, Rigidbody rb, AudioSource audioSource,BoxCollider collider)
     {
         yield return new WaitForSeconds(index * 1f);
+        collider.enabled = false;
         rb.useGravity = true;
         rb.isKinematic = false;
         audioSource.Play();
@@ -45,7 +46,7 @@ public class staireFall : MonoBehaviour
 
     IEnumerator destroyStair(int i, GameObject obj)
     {
-        yield return new WaitForSeconds((i + 1) * 1f);
+        yield return new WaitForSeconds((i + 1) *1f);
         Destroy(obj);
     }
     
