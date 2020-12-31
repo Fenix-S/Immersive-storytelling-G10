@@ -14,13 +14,11 @@ public class movementController : MonoBehaviour
     private XRRig rig;
     private Vector2 inputAxis;
     private CharacterController character;
-    private Rigidbody body;
 
     // Start is called before the first frame update
     void Start()
     {
         character = GetComponent<CharacterController>();
-        body = GetComponent<Rigidbody>();
         rig = GetComponent<XRRig>();
 
         if (SceneManager.GetActiveScene().buildIndex == 1)
@@ -40,14 +38,13 @@ public class movementController : MonoBehaviour
 
     public void Move(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
-       // inputAxis = context.ReadValue<Vector2>();
+        //inputAxis = context.ReadValue<Vector2>();
     }
 
     void FixedUpdate()
     {
         if (loadManager != null && loadManager.isLoading)
         {
-            body.constraints = RigidbodyConstraints.FreezeAll;
             return;
         }
         Quaternion headYaw = Quaternion.Euler(0, rig.cameraGameObject.transform.eulerAngles.y, 0);
@@ -62,8 +59,8 @@ public class movementController : MonoBehaviour
         else
         {
             var temp = direction * Time.fixedDeltaTime * speed;
+            print(temp);
             character.Move(temp);
         }
-        body.angularVelocity = Vector3.zero;
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class loadManager : MonoBehaviour
 {
-
     public Animator animator;
     private bool hasFallen = false;
     public bool isLoading { get; private set; }
