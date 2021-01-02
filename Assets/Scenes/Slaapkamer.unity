@@ -16850,6 +16850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1855884330}
   GoToScenes: 1
+  wait: 4
 --- !u!114 &1765183083
 MonoBehaviour:
   m_ObjectHideFlags: 0
