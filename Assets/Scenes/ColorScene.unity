@@ -26113,6 +26113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   GoToScenes: 4
+  wait: 0
 --- !u!1 &1940229135
 GameObject:
   m_ObjectHideFlags: 0

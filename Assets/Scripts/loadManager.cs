@@ -9,6 +9,7 @@ public class loadManager : MonoBehaviour
     public bool isLoading { get; private set; }
     public enum scenes {Bedroom=0,Stairs=1,Universe=2,ColorRoom=3,UnderWater=4}
     public scenes GoToScenes;
+    public float wait = 4f;
 
     void OnTriggerEnter(Collider e)
     {   
@@ -36,7 +37,7 @@ public class loadManager : MonoBehaviour
 
     IEnumerator LoadScene()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(wait);
         SceneManager.LoadScene((int)GoToScenes);
     }
 
