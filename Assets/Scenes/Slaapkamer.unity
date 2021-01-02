@@ -14074,7 +14074,6 @@ MonoBehaviour:
   m_TurnUsage: 0
   m_Controllers:
   - {fileID: 1503016897}
-  - {fileID: 743335991}
   m_DeadZone: 0.75
 --- !u!114 &1564161972
 MonoBehaviour:

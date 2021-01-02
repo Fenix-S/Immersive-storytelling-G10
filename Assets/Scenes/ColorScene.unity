@@ -5081,6 +5081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 407206075}
   GoToScenes: 4
+  wait: 0
 --- !u!114 &407206077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22804,7 +22805,6 @@ MonoBehaviour:
   m_TurnUsage: 0
   m_Controllers:
   - {fileID: 1337510049}
-  - {fileID: 750680475}
   m_DeadZone: 0.75
 --- !u!114 &1763360135
 MonoBehaviour:
