@@ -9,7 +9,7 @@ public class loadManager : MonoBehaviour
     public bool isLoading { get; private set; }
     public enum scenes {Bedroom=0,Stairs=1,Universe=2,ColorRoom=3,UnderWater=4}
     public scenes GoToScenes;
-    public float wait = 4f;
+    public float wait = 0f;
 
     void OnTriggerEnter(Collider e)
     {   
