@@ -22784,7 +22784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   input: 5
-  loadManager: {fileID: 0}
+  loadManager: {fileID: 407206076}
 --- !u!114 &1763360134
 MonoBehaviour:
   m_ObjectHideFlags: 0
