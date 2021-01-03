@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ColorScene.unity
     guid: d5c5dcd92626e0147afc2402fb2bee47
   - enabled: 1
-    path: Assets/Scenes/StrandEnZee.unity
+    path: Assets/Scenes/BeachScene/StrandEnZee.unity
     guid: b0190895330a19d47a0fe9ac6cd8b452
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c4385893bf4cbc047939e2e1426c2b3d, type: 2}
