@@ -7,7 +7,7 @@ public class DogLoader : MonoBehaviour
     public GameObject dog;
     void Start()
     {
-        if(PlayerPrefs.GetInt("enableDog", 0) == 1)
+        if(PlayerPrefs.GetInt("enableDog", 1) % 2 == 0)
         {
             dog.SetActive(true);
         }
