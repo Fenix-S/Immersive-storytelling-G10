@@ -21,7 +21,7 @@ public class flash : MonoBehaviour
         light.enabled = false;
         yield return new WaitForSeconds(pauze);
         light.enabled = true;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
         StartCoroutine(Flash(light));
     }
 }
