@@ -10,6 +10,10 @@ public class DogLoader : MonoBehaviour
         if(PlayerPrefs.GetInt("enableDog", 1) % 2 == 0)
         {
             dog.SetActive(true);
+            //advance clock
+            ClockTimer klok = GameObject.FindGameObjectWithTag("klok").GetComponent<ClockTimer>();
+            klok.initialHoursValue = 5;
+            klok.initialMinutesValue = 13;
         }
     }
 }

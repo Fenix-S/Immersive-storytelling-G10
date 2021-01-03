@@ -4740,6 +4740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TableClock Type3
       objectReference: {fileID: 0}
+    - target: {fileID: 145358, guid: 574ea592a0ebb814c8e7dad54ba216ba, type: 3}
+      propertyPath: m_TagString
+      value: klok
+      objectReference: {fileID: 0}
     - target: {fileID: 145486, guid: 574ea592a0ebb814c8e7dad54ba216ba, type: 3}
       propertyPath: m_IsActive
       value: 0
