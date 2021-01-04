@@ -51,7 +51,7 @@ public class movementController : MonoBehaviour
         Vector3 direction = headYaw * new Vector3(inputAxis.x, 0, inputAxis.y);
         direction.x = Mathf.Round(direction.x);
         direction.z = Mathf.Round(direction.z);
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 3)
         {
             var vector = direction * speed;
             character.SimpleMove(vector);
