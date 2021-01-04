@@ -11,9 +11,9 @@ public class DogLoader : MonoBehaviour
         {
             dog.SetActive(true);
             //advance clock
-            ClockTimer klok = GameObject.FindGameObjectWithTag("klok").GetComponent<ClockTimer>();
-            klok.initialHoursValue = 5;
-            klok.initialMinutesValue = 13;
+            //ClockTimer klok = GameObject.FindGameObjectWithTag("klok").GetComponent<ClockTimer>();
+            //klok.initialHoursValue = 5;
+            //klok.initialMinutesValue = 13;
         }
     }
 }
