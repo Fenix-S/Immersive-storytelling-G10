@@ -43,9 +43,8 @@ public class Floating : MonoBehaviour
         if (animPos)
         {
             Vector3 pos;
-            pos.x = origPos.x + posAmplitude.x * Mathf.Sin(posSpeed.x * Time.time + startAnimOffset);
-            pos.y = origPos.y + posAmplitude.y * Mathf.Sin(posSpeed.y * Time.time + startAnimOffset);
-            pos.z = origPos.z + posAmplitude.z * Mathf.Sin(posSpeed.z * Time.time + startAnimOffset);
+            pos = transform.position;
+            pos.y = posAmplitude.y * Mathf.Sin(posSpeed.y * Time.time + startAnimOffset);
             transform.position = pos;
         }
 
