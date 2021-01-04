@@ -32,13 +32,13 @@ public class movementController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       //InputDevice device = InputDevices.GetDeviceAtXRNode(input);
-        //device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
+       InputDevice device = InputDevices.GetDeviceAtXRNode(input);
+       device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
     }
 
     public void Move(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
-        inputAxis = context.ReadValue<Vector2>();
+        //inputAxis = context.ReadValue<Vector2>();
     }
 
     void FixedUpdate()
@@ -51,7 +51,7 @@ public class movementController : MonoBehaviour
         Vector3 direction = headYaw * new Vector3(inputAxis.x, 0, inputAxis.y);
         direction.x = Mathf.Round(direction.x);
         direction.z = Mathf.Round(direction.z);
-        if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 4)
         {
             var vector = direction * speed;
             character.SimpleMove(vector);
