@@ -12588,6 +12588,10 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 10804804, guid: ef94d4274068ef047aaa846843c42d3a, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 11442134, guid: ef94d4274068ef047aaa846843c42d3a, type: 3}
       propertyPath: currentDisplay
       value: 1
