@@ -499,7 +499,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130378340}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.150613, y: -17.8953, z: 28.194365}
+  m_LocalPosition: {x: 11.150613, y: -14.38, z: 28.194365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2036364683}
@@ -7286,9 +7286,9 @@ Light:
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
-    m_Resolution: -1
+    m_Resolution: 1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.5
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -8347,6 +8347,7 @@ GameObject:
   - component: {fileID: 1990034331}
   - component: {fileID: 1990034330}
   - component: {fileID: 1990034329}
+  - component: {fileID: 1990034333}
   m_Layer: 0
   m_Name: Beach
   m_TagString: Untagged
@@ -8431,6 +8432,19 @@ Transform:
   m_Father: {fileID: 124299145}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1990034333
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990034328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7, y: 2, z: 2.81}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1993563849
 PrefabInstance:
   m_ObjectHideFlags: 0
