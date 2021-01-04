@@ -4311,7 +4311,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545308637}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -5694,7 +5694,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705043067}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -17770,6 +17770,20 @@ MonoBehaviour:
   animator: {fileID: 1855884330}
   GoToScenes: 1
   wait: 4
+--- !u!114 &1765183083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765183080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a3dbd45d0b3d141afc91c8bf7c8425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topLid: {fileID: 545308640}
+  bottomLid: {fileID: 705043070}
 --- !u!28 &1766479499
 Texture2D:
   m_ObjectHideFlags: 0

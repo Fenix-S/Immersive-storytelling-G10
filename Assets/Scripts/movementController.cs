@@ -32,13 +32,13 @@ public class movementController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        InputDevice device = InputDevices.GetDeviceAtXRNode(input);
-        device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
+       //InputDevice device = InputDevices.GetDeviceAtXRNode(input);
+        //device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
     }
 
     public void Move(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
-        //inputAxis = context.ReadValue<Vector2>();
+        inputAxis = context.ReadValue<Vector2>();
     }
 
     void FixedUpdate()
@@ -59,7 +59,6 @@ public class movementController : MonoBehaviour
         else
         {
             var temp = direction * Time.fixedDeltaTime * speed;
-            print(temp);
             character.Move(temp);
         }
     }
