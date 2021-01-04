@@ -22,6 +22,18 @@ public class loadManager : MonoBehaviour
             hasFallen = true;
         }
     }
+    void OnCollisionEnter(Collision collision)
+    {
+        Collider e = collision.collider;
+        if (!hasFallen && e.tag.Equals("Player"))
+        {
+            if (animator != null)
+                animator.SetBool("blink", true);
+            isLoading = true;
+            StartCoroutine(LoadScene());
+            hasFallen = true;
+        }
+    }
 
     public void LoadSceneOnClick()
     {
