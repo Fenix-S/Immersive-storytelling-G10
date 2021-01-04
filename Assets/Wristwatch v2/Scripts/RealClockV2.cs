@@ -6,7 +6,7 @@ using UnityEngine;
 using System.Collections;
 using System;
 
-public class RealClock : MonoBehaviour {
+public class RealClockV2 : MonoBehaviour {
 	public Transform Hours;
 	public Transform Minutes;
 	public Transform Seconds;
