@@ -4900,7 +4900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11406532, guid: 574ea592a0ebb814c8e7dad54ba216ba, type: 3}
       propertyPath: clockSpeed
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11406532, guid: 574ea592a0ebb814c8e7dad54ba216ba, type: 3}
       propertyPath: initialHoursValue
