@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System;
 
 public class ClockTimer : MonoBehaviour {
 	public int initialHoursValue;
@@ -14,15 +14,16 @@ public class ClockTimer : MonoBehaviour {
 	private AnalogicClock analogicClock;
 	// Use this for initialization
 	void OnEnable () {
-		digitalClock = transform.GetComponentInChildren<DigitalClock> ();
+		digitalClock = transform.GetComponentInChildren<DigitalClock>();
 		analogicClock = transform.GetComponentInChildren<AnalogicClock>();
+		DateTime dateTime = DateTime.Now;
 		if (digitalClock != null) {
 			digitalClock.clockSpeed = clockSpeed;
 			digitalClock.SetReverseClock(reverse);
 			if (!pointFlicker)digitalClock.pointFlicker=false;
-			if (digitalClock.hoursDCV!=null)digitalClock.hoursDCV.ChangeToTargetTime (initialHoursValue);
-			if (digitalClock.minutesDCV!=null)digitalClock.minutesDCV.ChangeToTargetTime (initialMinutesValue);
-			if (digitalClock.secondsDCV!=null)digitalClock.secondsDCV.ChangeToTargetTime (initialSecondsValue);
+			if (digitalClock.hoursDCV!=null)digitalClock.hoursDCV.ChangeToTargetTime (dateTime.Hour);
+			if (digitalClock.minutesDCV!=null)digitalClock.minutesDCV.ChangeToTargetTime (dateTime.Minute);
+			if (digitalClock.secondsDCV!=null)digitalClock.secondsDCV.ChangeToTargetTime (dateTime.Second);
 		}
 		if (analogicClock != null) {
 			if (reverse)analogicClock.clockSpeed=-clockSpeed;
