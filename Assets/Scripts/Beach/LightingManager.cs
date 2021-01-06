@@ -24,7 +24,7 @@ public class LightingManager : MonoBehaviour
         {
             UpdateLighting(TimeOfDay / 520f);
         }
-        if(TimeOfDay < 348 && TimeOfDay > 349)
+        if(TimeOfDay < 347 && TimeOfDay > 349)
         {
             AudioSource[] sources = GameObject.FindGameObjectWithTag("Player").GetComponents<AudioSource>();
             foreach (var source in sources)
